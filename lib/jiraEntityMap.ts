@@ -1,6 +1,12 @@
 /**
  * Jira → GovernanceOS entity mapping
- *
+ export const JIRA_ENTITY_MAP: Array<[pattern: string, entityId: string]> = [
+  // Add your entity mappings here
+];
+
+export function resolveEntityId(id?: string) {
+  return id ?? '';
+}
  * Maps Jira project/issue entity name patterns to internal entity IDs.
  * Add an entry for each entity that appears in your Jira issues.
  *
