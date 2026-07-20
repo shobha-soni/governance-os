@@ -16,4 +16,5 @@ export const JIRA_ENTITY_MAP: Array<[pattern: string, entityId: string]> = [
   // ['acme holdings pte. ltd',   'ent-001'],
   // ['acme uk limited',          'ent-002'],
   // ['acme australia pty ltd',   'ent-003'],
+  export function resolveEntityId(id?: string) { return id ?? ''; }
 ];
